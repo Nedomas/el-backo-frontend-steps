@@ -1,7 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default () => (
   <div>
-    In Index route here
+    <div>
+      In Index route here
+    </div>
+
+    <Link to='/singleplayer/new'>
+      Singleplayer
+    </Link>
   </div>
 )
