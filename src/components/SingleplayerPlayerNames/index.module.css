@@ -1,0 +1,8 @@
+.field {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  padding: 15px;
+  min-width: 200px;
+  font-size: 24px;
+}
