@@ -1,10 +1,8 @@
 import React from 'react'
-import Logo from '../Logo'
 import styles from './index.module.css'
 
-export default ({ children }) => (
+export default () => (
   <div className={styles.container}>
-    <Logo />
-    {children}
+    El Backo
   </div>
 )
