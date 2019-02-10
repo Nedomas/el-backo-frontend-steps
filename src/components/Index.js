@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 import { Link } from 'react-router-dom'
 
 export default () => (
@@ -7,8 +8,8 @@ export default () => (
       In Index route here
     </div>
 
-    <Link to='/singleplayer/new'>
+    <Button to='/singleplayer/new'>
       Singleplayer
-    </Link>
+    </Button>
   </div>
 )
