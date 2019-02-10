@@ -1,9 +1,9 @@
 import React from 'react'
+import MenuContainer from './MenuContainer'
 import Button from './Button'
-import { Link } from 'react-router-dom'
 
 export default () => (
-  <div>
+  <MenuContainer>
     <div>
       In Index route here
     </div>
@@ -11,5 +11,5 @@ export default () => (
     <Button to='/singleplayer/new'>
       Singleplayer
     </Button>
-  </div>
+  </MenuContainer>
 )

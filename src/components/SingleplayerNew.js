@@ -1,9 +1,10 @@
 import React from 'react'
 import _ from 'lodash'
 import Button from './Button'
+import MenuContainer from './MenuContainer'
 
 export default () => (
-  <div>
+  <MenuContainer>
     <div>
       In new singleplayer route here
     </div>
@@ -13,5 +14,5 @@ export default () => (
         {n}
       </Button>
     ))}
-  </div>
+  </MenuContainer>
 )

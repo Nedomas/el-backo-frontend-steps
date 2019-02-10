@@ -1,4 +1,5 @@
 import React from 'react'
+import MenuContainer from './MenuContainer'
 
 export default ({
   match: {
@@ -7,7 +8,7 @@ export default ({
     },
   },
 }) => (
-  <div>
+  <MenuContainer>
     This will eventually ask for {playersCount} player names to create a game
-  </div>
+  </MenuContainer>
 )
