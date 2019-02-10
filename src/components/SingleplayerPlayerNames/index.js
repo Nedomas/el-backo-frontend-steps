@@ -2,6 +2,7 @@ import React from 'react'
 import _ from 'lodash'
 import { Formik, Field } from 'formik'
 import MenuContainer from '../MenuContainer'
+import Button from '../Button'
 import initialValues from './lib/initialValues'
 import styles from './index.module.css'
 
@@ -15,6 +16,9 @@ export default ({
   <MenuContainer>
     <Formik
       initialValues={initialValues(playersCount)}
+      onSubmit={(variables) => (
+        console.log('Form submitted with:', variables)
+      )}
     >
       {({ values: { players }, handleSubmit, errors }) => (
         <form onSubmit={handleSubmit}>
@@ -27,6 +31,10 @@ export default ({
               />
             </div>
           ))}
+
+          <Button component='button' type='submit'>
+            Start game
+          </Button>
         </form>
       )}
     </Formik>
