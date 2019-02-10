@@ -3,6 +3,7 @@ import _ from 'lodash'
 import { Formik, Field } from 'formik'
 import MenuContainer from '../MenuContainer'
 import initialValues from './lib/initialValues'
+import styles from './index.module.css'
 
 export default ({
   match: {
@@ -21,6 +22,7 @@ export default ({
             <div key={index}>
               <Field
                 name={`players.${index}.name`}
+                className={styles.field}
                 placeholder={`Player ${index + 1} name`}
               />
             </div>
