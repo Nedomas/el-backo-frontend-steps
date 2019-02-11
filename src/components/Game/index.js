@@ -1,5 +1,6 @@
 import React from 'react'
 import { Query } from 'react-apollo'
+import PlayersList from './PlayersList'
 import query from './lib/query'
 
 export default ({
@@ -16,7 +17,8 @@ export default ({
       return (
         <div>
           Game loaded
-          {JSON.stringify(data)}
+
+          <PlayersList data={data} />
         </div>
       )
     }}
