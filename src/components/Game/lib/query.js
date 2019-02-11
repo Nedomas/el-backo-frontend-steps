@@ -8,6 +8,7 @@ export default gql`
       players {
         id
         name
+        color
 
         space {
           id
