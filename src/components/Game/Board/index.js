@@ -1,7 +1,18 @@
 import React from 'react'
+import _ from 'lodash'
 
-export default () => (
+export default ({
+  data: {
+    game: {
+      spaces,
+    },
+  },
+}) => (
   <div>
-    Board
+    {_.map(spaces, (space) => (
+      <div key={space.id}>
+        Space {space.index}
+      </div>
+    ))}
   </div>
 )
