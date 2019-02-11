@@ -30,6 +30,7 @@ export default ({
             className={styles.player}
             style={{
               backgroundColor: player.color,
+              ...position(player.space, scalingFactor(size))
             }}
           />
         ))}
