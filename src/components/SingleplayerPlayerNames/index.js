@@ -2,6 +2,7 @@ import React from 'react'
 import _ from 'lodash'
 import { Formik, Field } from 'formik'
 import { Mutation } from 'react-apollo'
+import { Redirect } from 'react-router-dom'
 import MenuContainer from '../MenuContainer'
 import Button from '../Button'
 import initialValues from './lib/initialValues'
@@ -41,7 +42,7 @@ export default ({
                 Start game
               </Button>
 
-              {JSON.stringify(data)}
+              {data && <Redirect to={`/games/${data.createGame.id}`} />}
             </form>
           )}
         </Formik>
