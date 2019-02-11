@@ -9,3 +9,11 @@
   padding: 10px 0;
   font-size: 20px;
 }
+
+.dot {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  border-radius: 999px;
+}

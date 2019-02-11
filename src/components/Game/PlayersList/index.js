@@ -13,9 +13,9 @@ export default ({
   <div className={styles.container}>
     <Logo />
 
-    {_.map(players, ({ id, name }) => (
+    {_.map(players, ({ id, name, color }) => (
       <div key={id} className={styles.player}>
-        {name}
+        <div className={styles.dot} style={{ backgroundColor: color }} /> {name}
       </div>
     ))}
   </div>
