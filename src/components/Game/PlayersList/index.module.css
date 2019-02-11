@@ -1,0 +1,11 @@
+.container {
+  min-width: 300px;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #B9AFAB;
+}
+
+.player {
+  padding: 10px 0;
+  font-size: 20px;
+}
