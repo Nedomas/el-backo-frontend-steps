@@ -1,5 +1,6 @@
 import React from 'react'
 import { Query } from 'react-apollo'
+import Board from './Board'
 import PlayersList from './PlayersList'
 import query from './lib/query'
 import styles from './index.module.css'
@@ -17,8 +18,7 @@ export default ({
 
       return (
         <div className={styles.container}>
-          Game loaded
-
+          <Board data={data} />
           <PlayersList data={data} />
         </div>
       )
