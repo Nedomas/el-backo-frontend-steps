@@ -9,6 +9,7 @@ export default ({
   data: {
     game: {
       spaces,
+      players,
     },
   },
 }) => (
@@ -20,6 +21,16 @@ export default ({
             key={space.id}
             className={styles.space}
             style={{ ...position(space, scalingFactor(size)) }}
+          />
+        ))}
+
+        {_.map(players, (player) => (
+          <div
+            key={player.id}
+            className={styles.player}
+            style={{
+              backgroundColor: player.color,
+            }}
           />
         ))}
       </div>
